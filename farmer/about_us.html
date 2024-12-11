@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste Kisan - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            background-color: #035412;
+            overflow: hidden;
+            width: 100%;
+            z-index: 2;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #05e348;
+        }
+
+        section {
+            padding-left: 500px;
+            padding-right: 500px;
+            text-align: center;
+
+        }
+        section i {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Namaste Kisan</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About Us</a>
+        <a href="problems.html">Major Problems</a>
+    </nav>
+
+    <div class="chat-container">
+
+        <section>
+            <i class="fas fa-info-circle"></i>
+            <h2>हमारे बारे में</h2>
+            <p>नमस्ते किसान में आपका स्वागत है, जो कृषि सूचना और समुदाय समर्थन के लिए एक मुख्य स्त्रोत है। हमारा मिशन किसानों को ज्ञान, उपकरण, और एक-दूसरे से जुड़ने के लिए एक मंच प्रदान करना है।</p>
+        
+            <i class="fas fa-users"></i>
+            <h2>हमारी टीम</h2>
+            <p>हम एक उत्साही जुट हैं जो किसानों के भले के लिए और कृषि की प्रगति के लिए समर्पित व्यक्तियों की टीम हैं। हमारा विविध पृष्ठभूमि और विशेषज्ञता एक साथ आकर कृषि समुदाय की आवश्यकताओं को पूरा करने के लिए है।</p>
+        
+            <i class="far fa-eye"></i>
+            <h2>हमारी दृष्टि</h2>
+            <p>हमारी दृष्टि है कि हम एक सतत और सशक्त कृषि समुदाय बनाएं, जहां किसानों को नवीनतम जानकारी, प्रौद्योगिकी, और समर्थन से सुस्ती बनी रहे। हम जानकारी और सहयोग से कृषि उद्योग में सकारात्मक परिवर्तन को बढ़ावा देने की शक्ति में विश्वास करते हैं।</p>
+        
+            <i class="far fa-envelope"></i>
+            <h2>संपर्क करें</h2>
+            <p>कुछ सवाल या सुझाव हैं? हमसे <a href="mailto:info@namastekisan.com">info@namastekisan.com</a> पर संपर्क करें।</p>
+        </section>
+        
+        
+        <div class="message-input">
+            <input type="text" id="message-input" placeholder="अपना संदेश टाइप करें...">
+            <button onclick="sendMessage()">भेजें</button>
+        </div>
+    </div>
+    
+
+</body>
+</html>

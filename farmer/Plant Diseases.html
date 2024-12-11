@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Upload and Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #image-container {
+      margin-top: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Upload and Display</h1>
+
+  <input type="file" id="uploadInput" accept="image/*">
+  <button onclick="uploadImage()">Upload Image</button>
+
+  <div id="image-container"></div>
+
+  <script>
+    function uploadImage() {
+      var input = document.getElementById('uploadInput');
+      var container = document.getElementById('image-container');
+
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          var img = document.createElement('img');
+          img.src = e.target.result;
+          container.innerHTML = ''; // Clear previous content
+          container.appendChild(img);
+
+          // Optionally, you can add a message below the image
+          var message = document.createElement('p');
+          
+          message.textContent = 'बैक्टीरियल ब्लाइट!!  नाइट्रोजन का कम प्रयोग करें';
+
+          container.appendChild(message);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+  </script>
+
+</body>
+</html>
